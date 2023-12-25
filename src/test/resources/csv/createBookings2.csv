@@ -1,2 +1,2 @@
-firstname,lastname,totalprice,bookingdates,depositpaid,checkin,checkout,additionalneeds
+firstname,lastname,totalprice,depositpaid,checkin,checkout,additionalneeds
 Vince,Carter,238,true,2023-12-20,2024-01-05,KitKat

@@ -59,7 +59,6 @@ public class ApiBookingCsvTest {
                                    String lastname,
                                    int totalprice,
                                    boolean depositpaid,
-                                   String bookingdates,
                                    String checkin,
                                    String checkout,
                                    String additionalneeds){
@@ -70,9 +69,7 @@ public class ApiBookingCsvTest {
         bookings.lastname = lastname;
         bookings.totalprice = totalprice;
         bookings.depositpaid = depositpaid;
-        bookings.bookingdates = bookingdates;
-        bookings.checkin = checkin;
-        bookings.checkout = checkout;
+        bookings.bookingDates = new Bookings.BookingDates(checkout,checkin);
         bookings.additionalneeds = additionalneeds;
 
         Gson gson = new Gson();
