@@ -69,7 +69,7 @@ public class ApiBookingCsvTest {
         bookings.lastname = lastname;
         bookings.totalprice = totalprice;
         bookings.depositpaid = depositpaid;
-        bookings.bookingDates = new Bookings.BookingDates(checkout,checkin);
+        bookings.bookingDates = new Bookings.BookingDates(checkin, checkout);
         bookings.additionalneeds = additionalneeds;
 
         Gson gson = new Gson();
@@ -78,6 +78,7 @@ public class ApiBookingCsvTest {
 
       Response response = (Response) given()
                 .contentType(ct)
+                .accept(ct)
                 .log().all()
                 .body(jsonBody)
         .when()
