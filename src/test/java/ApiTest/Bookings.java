@@ -6,9 +6,9 @@ public class Bookings {
     public int totalprice;
     public boolean depositpaid;
 
-    public static class BookingDates{
+    public static class Bookingdates{
 
-        BookingDates(String checkin, String checkout){
+        Bookingdates(String checkin, String checkout){
             this.checkin = checkin;
             this.checkout = checkout;
         }
@@ -16,6 +16,6 @@ public class Bookings {
         public final String checkin;
         public final String checkout;
     }
-    public BookingDates bookingDates;
+    public Bookingdates bookingdates;
     public String additionalneeds;
 }

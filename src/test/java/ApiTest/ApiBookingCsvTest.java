@@ -69,7 +69,7 @@ public class ApiBookingCsvTest {
         bookings.lastname = lastname;
         bookings.totalprice = totalprice;
         bookings.depositpaid = depositpaid;
-        bookings.bookingDates = new Bookings.BookingDates(checkin, checkout);
+        bookings.bookingdates = new Bookings.Bookingdates(checkin, checkout);
         bookings.additionalneeds = additionalneeds;
 
         Gson gson = new Gson();
